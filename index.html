@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas WebGL Yosef</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background-color: black;
+        }
+
+        #canvasContainer {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="glCanvas"></canvas>
+    <div id="canvasContainer">
+        <button id="putih">Color 1</button>
+        <button id="coklat">Color 2</button>
+        <button id="cyan">Color 3</button>
+        <button id="resetColor">Reset Color</button>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
